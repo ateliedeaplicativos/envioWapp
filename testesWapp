@@ -1,0 +1,87 @@
+<!--
+
+function api() {
+  var testet = Boolean(true);
+  if(testet==true){
+    window.open("https://api.whatsapp.com/send?phone=5521996241182&text=123%20testando", "_blank")
+  }
+}
+api();
+
+https://api.whatsapp.com/send?phone=5521996241182&text=123%20testando
+
+https://api.whatsapp.com/send?phone=55111111111111&text=teste
+
+https://api.whatsapp.com/send?1=pt_BR&phone=5521996241182&text=sua%20mensagem
+
+
+https://wa.me/5521996241182?text=I'm%20interested%20in%20your%20car%20for%20sale
+
+-------------
+
+(function(){
+var phone = prompt(“Enviar mensagem para”, “5521996241182”);
+if (phone != null) {
+window.location.href = “https://api.whatsapp.com/send?phone=” + phone;
+}
+})();
+
+-------------------------------
+
+(function(){
+var phone = prompt(“Enviar mensagem para”, “5521996241182”);
+if (phone != null) {
+var link =   "https://api.whatsapp.com/send?phone="+phone;
+window.location.href = link;
+}
+})();
+
+---------------
+var phone = "5521996241182";
+var link = "https://api.whatsapp.com/send?phone=";
+var teste = link+phone;
+console.log(teste);
+
+--------------
+function mkt(){
+var phone = "5521996241182";
+var link = "https://web.whatsapp.com/send?phone=";
+var mensagem = "&text=123%20testando%0Dquebralinha";
+var enviar = link+phone+mensagem;
+window.open(enviar);
+}
+
+for(let i=0; i<5; i++){
+  setInterval(mkt(),10000)
+}
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to change the layout of this paragraph</p>
+
+<script>
+
+function mkt(){
+for(let i=0; i<5; i++){
+  setInterval(function(){
+
+(function (){
+  var phone = "5521996241182";
+  var link = "https://web.whatsapp.com/send?phone=";
+  var mensagem = "&text=123%20testando%0Dquebralinha";
+  var enviar = link+phone+mensagem;
+  window.open(enviar);
+});
+},10000);
+}
+}
+
+</script>
+
+<button onclick="mkt()">Click Me!</button>
+
+</body>
+</html>
