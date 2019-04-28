@@ -97,7 +97,7 @@ fireOnThis.fireEvent('on'+evt,evObj);
 }
 }
 
-var listBotoes=document.getElementsByClassName('_35EW6')
+var listBotoes=document.getElementsByClassName('_35EW6');
 
 for(var k in listBotoes){fireEvent(listBotoes[k],'click');
 
